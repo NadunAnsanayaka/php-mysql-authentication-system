@@ -1,0 +1,238 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:wght@400;500;600&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url(/signinsite/assets/background.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.error {
+    color: red;
+}
+
+.middlepart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0px;
+    /* height: 90vh; */
+}
+
+.wrapper {
+    width: 90%;
+    max-height: 90vh;
+    max-width: 26.25rem; 
+    background: transparent;
+    border: 0.125rem solid rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(1.25rem);
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2); 
+    color: #fff;
+    border-radius: 0.625rem; 
+    padding: 2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper h1 {
+    font-size: 2.25rem; 
+    text-align: center;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 3.125rem; 
+    margin: 1.875rem 0; 
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 0.125rem solid rgba(255, 255, 255, 0.2); 
+    border-radius: 2.5rem; 
+    font-size: 1rem; 
+    color: #fff;
+    padding: 1.25rem 2.8125rem 1.25rem 1.25rem; 
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.input-box i {
+    position: absolute;
+    right: 1.25rem; 
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.25rem; 
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem; 
+    margin: -0.9375rem 0 0.9375rem; 
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 0.1875rem; 
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 100%;
+    height: 2.8125rem;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 2.5rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 1rem; 
+    color: #333;
+    font-weight: 600;
+}
+
+.wrapper .btn:hover {
+    background: #DBD2EA;
+}
+
+.wrapper .btn:focus {
+    background: #fff;
+}
+
+.wrapper .register-link {
+    font-size: 0.9rem; 
+    text-align: center;
+    margin: 1.25rem 0 0.9375rem; 
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation bar css */
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
+    /* height: 8vh; */
+    padding: 1.25rem;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 2vw;
+    list-style-type: none;
+}
+
+.navigation a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+.navigation .login {
+    float: right;
+}
+
+/* style for index.php */
+
+.middlepart_index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.welcome {
+    font-size: 2.8125rem; 
+    color: #fff;
+}
+
+
+@media (max-width: 768px) {
+    .navigation ul {
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 1rem; 
+    }
+
+    .wrapper {
+        width: 90%; 
+        padding: 1.5rem; 
+    }
+
+    .wrapper h1 {
+        font-size: 1.75rem; 
+    }
+
+    .input-box input {
+        font-size: 0.9rem; 
+        padding: 0.75rem 2.25rem 0.75rem 1rem; 
+    }
+
+    .wrapper .btn {
+        height: 2.5rem; 
+        font-size: 0.9rem; 
+    }
+
+    .welcome {
+        font-size: 2rem; 
+        text-align: center;
+    }
+    .remember-forgot {
+    gap: 5vh;
+    }
+}
+
+@media (max-height: 768px) {
+    .wrapper .input-box {
+        margin: 1rem 0; 
+    }
+    .navigation {
+        
+        padding: 1rem;
+    }
+
+}
